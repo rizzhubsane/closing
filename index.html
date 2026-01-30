@@ -340,6 +340,29 @@
             background: linear-gradient(270deg, transparent, var(--violet-glow));
         }
 
+        /* Entry passes notice */
+        .entry-passes {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: var(--fuchsia-bright);
+            margin-top: 2.5rem;
+            animation: fadeIn 1s ease-out 1.8s both, glowText 3s ease-in-out infinite;
+        }
+
+        @keyframes glowText {
+
+            0%,
+            100% {
+                text-shadow: 0 0 10px rgba(216, 180, 254, 0.3);
+            }
+
+            50% {
+                text-shadow: 0 0 20px rgba(216, 180, 254, 0.6), 0 0 30px rgba(124, 58, 237, 0.3);
+            }
+        }
+
         /* Animation keyframes */
         @keyframes fadeIn {
             from {
@@ -495,6 +518,8 @@
             </div>
 
             <p class="tagline">Engineering the Mind of the Machine</p>
+
+            <p class="entry-passes">🎟️ Entry Passes will be live soon.</p>
         </div>
 
         <div class="accent-line"></div>
